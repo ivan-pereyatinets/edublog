@@ -8,11 +8,11 @@ require_once('header.php');
             <form action="php/addarticleHahdler.php" method="post">
                 <div class="mb-3">
                     <label for="">Заголовок</label>
-                    <input name="header" type="text" class="form-control" required placeholder="Заголовок">
+                    <input style="width: 600px" name="header" type="text" class="form-control" required placeholder="Заголовок">
                 </div>
                 <div class="mb-3">
-                    <label for="">Текст статьи</label>
-                    <input name="content" type="text" class="form-control" required placeholder="Текст статьи">
+                    <label for="">Текст статьи</label><br>
+                    <textarea  style="height: 200px; width: 600px" name="content" placeholder="Текст статьи" class="form-element message"></textarea>
                 </div>
                 <div class="mb-3">
                     <p><strong>Автор: </strong><?= $_SESSION['name']; ?></p>
